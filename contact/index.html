@@ -103,5 +103,55 @@
     <footer>
         <p>&copy; 2025 Scellia Development | <a href="/mentions-legales.html">Mentions légales</a></p>
     </footer>
+
+    <script src="/js/redirection.js"></script>
+
+    <script>
+/* Empêche la restauration des champs lorsque l'utilisateur revient via Back */
+(function () {
+  function clearFormIfBack() {
+    const forms = document.querySelectorAll("form");
+    if (!forms.length) return;
+
+    forms.forEach(form => {
+      try { form.reset(); } catch (e) { /* ignore */ }
+    });
+  }
+
+  // pageshow : détecte les chargements depuis le back/forward cache
+  window.addEventListener("pageshow", function (event) {
+    // event.persisted === true lorsque la page vient du bfcache
+    if (event.persisted) {
+      clearFormIfBack();
+    } else {
+      // fallback : navigation API (some browsers)
+      try {
+        const nav = performance.getEntriesByType && performance.getEntriesByType("navigation");
+        const type = nav && nav[0] && nav[0].type;
+        if (type === "back_forward" || performance && performance.navigation && performance.navigation.type === 2) {
+          clearFormIfBack();
+        }
+      } catch (e) {
+        // ignore
+      }
+    }
+  });
+
+  // petit filet : si on a un back immédiat mais pageshow non supporté, on peut aussi reset au load
+  window.addEventListener("load", function () {
+    // ne pas vider systématiquement au load (éviter d'effacer lors d'un rechargement volontaire),
+    // on l'utilise seulement si on détecte navigation back
+    try {
+      const nav = performance.getEntriesByType && performance.getEntriesByType("navigation");
+      const type = nav && nav[0] && nav[0].type;
+      if (type === "back_forward" || (performance && performance.navigation && performance.navigation.type === 2)) {
+        clearFormIfBack();
+      }
+    } catch (e) {}
+  });
+})();
+</script>
+
+
 </body>
 </html>

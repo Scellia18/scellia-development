@@ -3,36 +3,33 @@ function gererFormulaire(formId) {
     if (!form) return;
 
     form.addEventListener("submit", async function(e) {
-        e.preventDefault();
+        e.preventDefault(); // On gère tout manuellement
 
-        // Vérification des champs requis
-        if ([...this.querySelectorAll("[required]")].some(f => !f.value.trim())) {
-            return alert("⚠️ Merci de remplir tous les champs obligatoires.");
+        let toutRempli = true;
+
+        // Vérification des champs obligatoires
+        this.querySelectorAll("[required]").forEach(champ => {
+            if (!champ.value.trim()) toutRempli = false;
+        });
+
+        if (!toutRempli) {
+            alert("⚠️ Merci de remplir tous les champs obligatoires.");
+            return;
         }
 
-        try {
-            const res = await fetch(this.action, {
-                method: "POST",
-                body: new FormData(this),
-                headers: { "Accept": "application/json" }
-            });
+        // Envoi du formulaire vers Formspree
+        const data = new FormData(this);
 
-            const result = await res.json();
-            console.log(result);
+        await fetch(this.action, {
+            method: "POST",
+            body: data,
+            headers: { "Accept": "application/json" }
+        });
 
-            if (result.ok || result.success) {
-                this.reset(); // vide le formulaire
-                window.location.href = "https://www.scelliadevelopment.re/merci/";
-            } else {
-                alert("❌ Une erreur est survenue lors de l’envoi.");
-            }
-
-        } catch (err) {
-            console.error(err);
-            alert("❌ Impossible d’envoyer le formulaire. Vérifiez votre connexion.");
-        }
+        // Redirection manuelle GRATUITE vers la page Merci
+        window.location.href = "https://www.scelliadevelopment.re";
     });
 }
 
-// ⚡ Appel explicite pour initialiser le formulaire
+// Appel pour les formulaires
 gererFormulaire("contact");
