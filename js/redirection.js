@@ -1,29 +1,38 @@
-document.getElementById("contact")?.addEventListener("submit", async function(e) {
-    e.preventDefault();
+function gererFormulaire(formId) {
+    const form = document.getElementById(formId);
+    if (!form) return;
 
-    // Vérification des champs requis
-    if ([...this.querySelectorAll("[required]")].some(f => !f.value.trim())) {
-        return alert("⚠️ Merci de remplir tous les champs obligatoires.");
-    }
+    form.addEventListener("submit", async function(e) {
+        e.preventDefault();
 
-    try {
-        const res = await fetch(this.action, {
-            method: "POST",
-            body: new FormData(this),
-            headers: { "Accept": "application/json" }
-        });
-
-        const result = await res.json();
-        console.log(result); // debug
-
-        if (result.ok || result.success) {
-            this.reset(); // vide le formulaire
-            window.location.href = "https://www.scelliadevelopment.re/merci/"; // redirection
-        } else {
-            alert("❌ Une erreur est survenue lors de l’envoi.");
+        // Vérification des champs requis
+        if ([...this.querySelectorAll("[required]")].some(f => !f.value.trim())) {
+            return alert("⚠️ Merci de remplir tous les champs obligatoires.");
         }
-    } catch (err) {
-        console.error(err);
-        alert("❌ Impossible d’envoyer le formulaire. Vérifiez votre connexion.");
-    }
-});
+
+        try {
+            const res = await fetch(this.action, {
+                method: "POST",
+                body: new FormData(this),
+                headers: { "Accept": "application/json" }
+            });
+
+            const result = await res.json();
+            console.log(result);
+
+            if (result.ok || result.success) {
+                this.reset(); // vide le formulaire
+                window.location.href = "https://www.scelliadevelopment.re/merci/";
+            } else {
+                alert("❌ Une erreur est survenue lors de l’envoi.");
+            }
+
+        } catch (err) {
+            console.error(err);
+            alert("❌ Impossible d’envoyer le formulaire. Vérifiez votre connexion.");
+        }
+    });
+}
+
+// ⚡ Appel explicite pour initialiser le formulaire
+gererFormulaire("contact");
