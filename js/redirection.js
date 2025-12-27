@@ -27,7 +27,7 @@ function gererFormulaire(formId) {
         });
 
         // Redirection manuelle GRATUITE vers la page Merci
-        window.location.href = "https://www.scelliadevelopment.re";
+        window.location.href = "/merci/";
     });
 }
 
