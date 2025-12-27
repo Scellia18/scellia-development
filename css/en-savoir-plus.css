@@ -1,0 +1,163 @@
+/*________________________________HEADER____________________________________________*/
+
+h1{
+    color: #D4AF37;
+    padding: 4rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    background-color: rgb(23, 23, 23);
+}
+/*________________________________FIN HEADER__________________________________________*/
+/*________________________________MAIN____________________________________*/
+
+main h2{
+    text-align: center;
+    color: #c9a24D;
+    font-size: 1.8rem;
+    margin: 2rem 0 1.5rem 0;
+    font-weight: lighter;
+}
+
+
+
+/*_________________________________________________SECTION___________________________________*/
+
+
+
+section{
+    padding: 2rem 5rem 5rem 5rem;
+    background-color: rgba(101, 98, 98, 0.096);
+    color: rgba(255, 255, 255, 0.650);
+    margin: 8% 8% 10% 8%;
+    line-height: 1.8rem;
+    border-radius: 2rem;
+    box-shadow:  0 0 5px #DAA520;
+    border: 1px solid rgba(255, 255, 255, 0.500);
+}
+
+
+
+
+/* EXPLICATION PROCESSUS CREATION*/
+.H2processus{
+    margin: 6rem 0 6rem 0;
+}
+
+.H2processus h2{
+    margin: 1rem;
+    color: #c9a24D;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+h3{
+    margin-top: 4rem;
+    color: #c9a24D;
+    font-weight: lighter;
+    font-size: 1.3rem;
+}
+
+p{
+    margin-top: 1rem ; 
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+
+/*Les petits plus*/
+
+.PlusImg{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.PlusImg h2{
+    font-size: 2.2rem;
+    margin-top: 4rem;
+    color: #c9a24D;
+    text-decoration: underline 1px;
+    text-underline-offset: 10px;
+}
+
+.LesPlusDetailsList{
+    margin-left: 1rem;
+    list-style: none;
+}
+.LesPlusDetailsList li{
+    font-size: 1.15rem;
+}
+
+ul{
+    margin: 1rem 0 0 3rem;
+    list-style: none;
+}
+li{
+    margin: 1rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+u{
+    text-decoration: underline 0.5px;
+    text-underline-offset: 4px;
+}
+/*___________________________________________________________________________*/
+
+/*ADAPTATION MOBILE 767px */
+@media (max-width: 1049px){
+    h1{
+        font-size: 1.5rem;
+        padding: 3rem;
+    }
+    main h2{
+        font-size: 1.15rem;
+        margin: 2rem 1.5rem 0rem 1.5rem;
+    }
+    section{
+        padding: 1.5rem;
+        margin: 5% 5% 10% 5%;
+        line-height: 1.5rem;
+    }
+    /* EXPLICATION PROCESSUS CREATION*/
+
+    .H2processus h2{
+        font-size: 1.12rem;
+    }
+    .H2processus{
+        margin: 2.5rem 0 2.5rem 0;
+    }
+    h3{
+        font-size: 1.08rem;
+        margin-top: 2.2rem;
+    }
+    p{
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+    /*Les petits plus*/
+    .PlusImg h2{
+        font-size: 1.25rem;
+        margin: 0;
+    }
+   .LesPlusDetailsList{
+        margin-left: 0.25rem;
+   }
+   .LesPlusDetailsList li{
+        font-size: 0.85rem;
+        line-height: 1.5rem;
+   }
+   ul{
+    margin: 0;
+   }
+   li{
+    font-size: 1rem;
+    margin: 0.5rem;
+
+   }
+
+}

@@ -1,0 +1,150 @@
+/*-------------------------------------------RESET DU NAVIGATEUR----------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*-----------------------------------------------FIN_RESET----------------------------------------*/
+
+/*Design commun body/footer*/
+
+body, footer, .MesServices{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 45);
+
+}
+body, .StatutMetierH1,h2, h3, h4{
+    font-weight: lighter;
+}
+footer{
+    background-color: rgb(23, 23, 23);
+    text-align: center;
+    color: #D4AF37;
+    padding: 2rem;
+    font-weight: normal;
+
+}
+footer a{
+    color: #D4AF37;
+    text-decoration: underline 1px;
+    text-underline-offset: 4px ;
+}
+
+
+/*separation dorée*/
+
+.hr-gold, .hr-gold2 { /*grande séparation dorée*/
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-color: #d4af37;
+    opacity: 0.7;
+
+}
+.hr-gold2{
+    margin-top: 4rem;
+
+}
+
+.goldenLine{ /*petite séparation dorée*/
+    border: none;
+  height: 1px;
+  width: 60%;
+  margin: 2rem auto;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #d4af37,
+    transparent
+  );
+}
+
+
+
+/*_____________________________________________Navigation___________________________________________*/
+.logoNav{ /*dimension icône accueil*/
+    width: 1.5rem;
+    margin: 1rem auto;
+
+}
+nav{
+    background-color: rgb(23, 23, 23);
+    display: flex;
+    justify-content: center;
+}
+nav a{ /*style des liens de navigation*/
+    color:#D4AF37;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+nav a:hover{
+    text-decoration: underline rgba(255, 255, 255, 0.90);
+    text-underline-offset: 0.5rem;/*accentuer l'espace entre le texte et le soulignement*/
+    text-decoration-thickness: 0.1rem;/*épaisseur du soulignement*/
+    transition: all 0.35s ease-in-out; /*remettre à 0.15s si pas correct*/
+    transform: scale(1.05);/*grossissement lors du passage sur le lien*/
+}
+/*ETAT NAV ACTIV*/
+nav a.active{
+    text-decoration: underline rgba(255, 255, 255, 0.650);
+    text-underline-offset: 0.5rem;/*accentuer l'espace entre le texte et le soulignement*/
+    text-decoration-thickness: 0.05rem;/*épaisseur du soulignement*/
+}
+
+.nav{ /*permet de garder la navigation lors du mouvement*/
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgb(23, 23, 23);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+
+
+}
+.Home a, .alignNav{ /*aligner l'icône avec les liens de navigation*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.Home a{ /*l'espacement entre l'icône de l'accueil et le lien "accueil" */
+    gap: 0.5rem;
+}
+/*_____________________________________________Header____________________________________________*/
+
+#logoScelliaDev{
+    display: block;
+    margin: 0 auto;
+    width: 25rem;
+    max-width: 50%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/*_______________________________________________FIN_HEADER______________________________________*/
+
+/*ADAPTATION MOBILE max-width: 767px*/
+
+@media (max-width: 767px){
+    .logoNav{
+        width: 0.90rem;
+    }
+    nav a{
+        font-size: 0.85rem;
+    }
+    .Home a, .alignNav{
+        gap: 0.85rem;
+    }
+    .Home a{
+        gap: 5%;
+    }
+    #logoScelliaDev{
+        width: 15rem;
+    }
+    footer{
+        font-size: 0.85rem;
+    }
+}

@@ -1,0 +1,83 @@
+/*_____________________________________________HEADER________________________________*/
+
+h1{
+    background-color: rgb(23, 23, 23);
+    color: #D4AF37;
+    padding: 4rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+/*_____________________________________________MAIN________________________________*/
+
+main p{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    color: #c9a24D;
+}
+
+
+
+#merci{
+    display: block;
+    margin: 1.5rem auto;
+    width: 20%;
+}
+#Button{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem;
+    width: 9rem;
+    background-color: black;
+    color:#c9a24D;
+    border: 1px solid rgba(255, 255, 255, 0.90);
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+    border-radius: 0.5rem;
+}
+main a{
+    text-align: center;
+    text-underline-offset: 6px;
+}
+
+
+#Button:hover{
+    box-shadow:  0 0 5px #DAA520;
+    transform: scale(1.05);
+    transition: all 0.15s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.90);
+}
+/*__________________________________________________________*/
+
+/*ADAPTATION MOBILE*/
+
+@media (max-width: 767px){
+    h1{
+        font-size: 1.5rem;
+        padding: 3rem;
+    }
+    h2{
+        font-size: 1.15rem;
+    
+    }
+    #merci{
+        margin: 1rem auto;
+        width: 30%;
+    }
+    
+    main p{
+        font-size: 1rem;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 0.5rem;
+    }
+    
+    #Button{
+        font-size: 0.85rem;
+        width: 7.5rem;
+
+    }
+    
+}

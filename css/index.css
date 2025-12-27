@@ -1,0 +1,243 @@
+/*_________________________________________HEADER INDEX.HTML_____________________________________*/
+
+h1{
+    color: #D4AF37;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight:400;
+    background-color: rgb(23, 23, 23);
+}
+
+
+.StatutMetierH1{
+    font-size: 2rem;
+}
+
+/*____________________________________________FIN HEADER INDEX___________________________________*/
+
+
+/*______________________________________________Main_____________________________________________*/
+
+.Intro{
+    text-align: center;
+    line-height: 2.5rem;
+    color: #c9a24D;
+}
+main{
+    padding: 4% 15% 4% 15%;
+
+}
+main p{
+    font-size: 1.5rem;
+    margin: 3% 0 5% 0;
+}
+main h2{
+    font-size: 1.8rem;
+}
+.boutonIntro{
+    padding: 1%;
+    font-size: 1rem;
+    font-weight: normal;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.90);
+}
+main a{
+    text-decoration: none;
+    color: #c9a24D;
+
+}
+.boutonIntro:hover{
+    box-shadow:  0 0 5px #DAA520;
+    transform: scale(1.05);
+    transition: all 0.1s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.650);
+
+}
+/*____________________________________________________ANIMATION SECTION SERVICE____________________*/
+
+/*animation service*/
+
+.services {
+  position: relative;
+  background: #000; /*ajouter un degradé doré à voir la meilleure methode*/
+  overflow: hidden;
+}
+
+.services-content {
+  position: relative;
+  z-index: 2;
+  padding: 6rem 2rem;
+}
+
+/* Animation proposé*/
+.bg-animation {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(212,175,55,0.15), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(212,175,55,0.12), transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(212,175,55,0.08), transparent 50%);
+  animation: goldFloat 18s ease-in-out infinite;
+}
+
+@keyframes goldFloat {
+  0% {
+    background-position: 20% 30%, 80% 70%, 50% 50%;
+  }
+  50% {
+    background-position: 30% 40%, 70% 60%, 60% 40%;
+  }
+  100% {
+    background-position: 20% 30%, 80% 70%, 50% 50%;
+  }
+}
+/*__________________________________________________fin animation service____________________________________*/
+
+/*___________________________________________________Section_Services________________________________________*/
+
+section{
+    color: #c9a24D;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+}
+.conteneurServices{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+  
+h3{
+    text-align: center;
+    font-size: 2.2rem;
+    padding-top: 3rem;
+    color: #D4AF37;
+ }
+
+.SloganServices{
+    color: #c9a24D; /*essayer de rassembler toute les couleurs*/
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+
+}
+
+
+article{
+    
+    padding: 2rem;
+    margin: 5rem;
+    width: 25rem;
+    text-align: center;
+    line-height: 1.5rem;
+    background-color: rgba(101, 98, 98, 0.096);
+    border-radius: 1rem;
+
+}
+article:hover{
+    box-shadow:  0 0 5px #DAA520;
+    transition: all 0.35s ease-in-out;
+    transform: scale(1.05);
+    border: 1px solid rgba(255, 255, 255, 0.650);
+
+}
+
+
+.numero {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
+    display: block;
+    text-shadow: rgba(255, 255, 255, 0.90) 0px 0px 0.5px;
+
+}
+
+h4{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #D4AF37;
+    text-shadow: rgba(255, 255, 255, 0.90) 0px 0px 1px;
+
+}
+article p{
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 1.1rem;
+}
+
+.MesServices a{
+    color: #c9a24D;
+    text-decoration: underline 1px;
+    text-underline-offset: 4px;
+    text-shadow: rgba(255, 255, 255, 0.90) 0px 0px 0.5px;
+
+}
+
+
+/*__________________________________________________________________________________________________________*/
+
+
+/*ADAPTATION MOBILE767px de base mais ramené à 1249px*/
+
+@media (max-width: 1249px){
+    
+    h1{
+        font-size: 1.5rem;
+    }
+    .StatutMetierH1{
+        font-size: 1.3rem;
+    }
+    .Intro{
+        line-height: 1.6rem;
+    }
+    main{
+        padding: 4% 10%;
+    }
+    main p{
+        font-size:1rem;
+    }
+    main h2{
+        font-size: 1.15rem
+    }
+    .boutonIntro{
+        font-size: 0.80rem;
+        padding: 0.5rem;
+    }
+    section{
+        letter-spacing: 0.03em;
+    }
+    .conteneurServices{
+        align-items: center;
+        flex-direction: column;
+    }
+    h3{
+        font-size: 1.5rem;
+        padding-top: 0;
+    }
+    .SloganServices{
+        font-size: 0.95rem;
+        
+    }
+    article{
+        padding: 1rem;
+        margin: 2.5rem;
+        width: 70%;
+    }
+    .numero{
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    h4{
+        font-size: 1.25rem;
+    }
+    article p{
+        font-size: 0.95rem;
+    }
+    .MesServices a{
+        font-size: 0.9rem;
+    }
+}

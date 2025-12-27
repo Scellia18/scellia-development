@@ -1,0 +1,57 @@
+/*________________________________HEADER____________________________________________*/
+
+h1{
+    color: #D4AF37;
+    padding: 4rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    background-color: rgb(23, 23, 23);
+}
+/*________________________________FIN HEADER__________________________________________*/
+section{
+    margin: 8rem 20rem;
+    background-color: white;
+    padding:  2rem 3rem 5rem 3rem;
+    border-radius: 1rem;
+    border: 2px solid #DAA520;
+
+}
+h2{
+    color: red;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    text-decoration: underline 1px;
+    text-underline-offset: 6px;
+    font-weight: normal;
+}
+p, ul li{
+    font-weight: 500;
+    padding-left: 1.5rem;
+    list-style: none;
+    line-height: 1.5rem;
+    font-size: 1rem;
+
+}
+ul{
+    /* padding-bottom: 1.5rem; */
+}
+@media (max-width: 1179px){
+    h1{
+        font-size: 1.5rem;
+        padding: 3rem;
+    }
+    h2{
+        font-size: 1.15rem;
+    }
+    p, ul li{
+        font-weight: 400;
+        padding-left: 1rem;
+        font-size: 0.95rem;
+    }
+    section{
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        margin: 5% 5% 10% 5%;
+    }
+}

@@ -1,0 +1,139 @@
+/*_____________________________________HEADER PROJET____________________________________*/
+
+h1{
+    color: #D4AF37;
+    padding: 3.65rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight:lighter;
+    background-color: rgb(23, 23, 23);
+}
+/*______________________________________FIN HEADER PROJET_________________________________*/
+
+/*________________________________________MAIN_____________________________________________*/
+
+h2{
+    text-align: center;
+    color: #c9a24D;
+    font-size: 1.8rem;
+    margin: 2rem 0 1.5rem 0;
+    font-weight: lighter;
+}
+main{
+    margin-bottom: 6rem;
+}
+/*________________________________________FIN MAIN_________________________________________*/
+
+.TousLesProjets{
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    padding: 3rem;
+    width: 30rem;
+    text-align: center;
+    line-height: 1.5rem;
+    background-color: rgba(101, 98, 98, 0.096);
+    border-radius: 1rem;
+    margin: 5rem 5rem 10rem 5rem;
+
+}
+
+h3{
+    color: #D4AF37;
+    text-shadow: rgba(255, 255, 255, 0.90) 0px 0px 1px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+article p{
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+    font-weight: normal;
+}
+ul li{
+    list-style: none;
+    color: rgba(255, 255, 255, 0.90);
+    text-align: left;
+    margin-left: 5%;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font-weight: normal;
+}
+
+
+article a{
+    color: #c9a24D;
+    font-weight: normal;
+    text-decoration: underline 1px;
+    text-underline-offset: 4px;
+    text-shadow: rgba(255, 255, 255, 0.90) 0px 0px 0.5px;
+
+
+}
+ul{
+    margin-bottom: 2rem;
+}
+
+/*Animation projet*/
+
+article:hover{
+    box-shadow:  0 0 5px #DAA520;
+    transition: all 0.35s ease-in-out;
+    transform: scale(1.05);
+    border: 1px solid rgba(255, 255, 255, 0.650);
+
+}
+
+article img{
+    margin: 1rem;
+
+}
+/*__________________________________________________________*/
+
+/*ADAPTATION MOBILE*/
+
+@media (max-width: 1049px){
+    h1{
+        font-size: 1.5rem;
+        padding: 3rem;
+    }
+    h2{
+        font-size: 1.15rem;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    main{
+        margin-bottom: 2.5rem;
+    }
+    .TousLesProjets{
+        flex-direction: column;
+        align-items: center;
+    }
+    article{
+        padding: 1.5rem;
+        width: 20rem;
+        margin: 2rem;
+    }
+    h3{
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+    }
+    article p{
+        font-size: 1rem;
+    }
+    ul li{
+        font-size: 0.85rem;
+    }
+    article a{
+        font-size: 0.90rem;
+    }
+}
