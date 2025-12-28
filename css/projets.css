@@ -101,6 +101,9 @@ article img{
 /*ADAPTATION MOBILE*/
 
 @media (max-width: 1049px){
+    h1,h2,h3{
+        font-weight: normal;
+    }
     h1{
         font-size: 1.5rem;
         padding: 3rem;
@@ -125,7 +128,7 @@ article img{
     h3{
         margin-top: 0.5rem;
         margin-bottom: 1rem;
-        font-size: 1.25rem;
+        font-size: 1.18rem;
     }
     article p{
         font-size: 1rem;

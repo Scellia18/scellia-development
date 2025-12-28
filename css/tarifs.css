@@ -113,9 +113,11 @@ ul{
 /*ADAPTATION MOBILE767px*/
 
 @media (max-width: 1249px){
+    
     h1{
         font-size: 1.5rem;
         padding: 3rem;
+        font-weight: normal;
     }
     h2{
         font-size: 1.15rem;

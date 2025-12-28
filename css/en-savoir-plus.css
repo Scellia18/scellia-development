@@ -1,3 +1,6 @@
+.footer{
+    font-weight: normal;
+}
 /*________________________________HEADER____________________________________________*/
 
 h1{
@@ -110,6 +113,14 @@ u{
 
 /*ADAPTATION MOBILE 767px */
 @media (max-width: 1049px){
+    footer p{
+        font-size: 0.85rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: normal;
+    }
+    h1, main h2, .H2processus h2,  p, h3{
+        font-weight: normal;
+    }
     h1{
         font-size: 1.5rem;
         padding: 3rem;
@@ -122,11 +133,13 @@ u{
         padding: 1.5rem;
         margin: 5% 5% 10% 5%;
         line-height: 1.5rem;
+    
     }
     /* EXPLICATION PROCESSUS CREATION*/
 
     .H2processus h2{
         font-size: 1.12rem;
+    
     }
     .H2processus{
         margin: 2.5rem 0 2.5rem 0;
@@ -153,10 +166,12 @@ u{
    }
    ul{
     margin: 0;
+    font-weight: normal;
    }
    li{
     font-size: 1rem;
     margin: 0.5rem;
+    font-weight: normal;
 
    }
 

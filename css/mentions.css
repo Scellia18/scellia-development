@@ -23,7 +23,7 @@ h2{
     padding-top: 1rem;
     font-size: 1.5rem;
     text-decoration: underline 1px;
-    text-underline-offset: 6px;
+    text-underline-offset: 5px;
     font-weight: normal;
 }
 p, ul li{
@@ -38,20 +38,33 @@ ul{
     /* padding-bottom: 1.5rem; */
 }
 @media (max-width: 1179px){
+    
+    h1{
+        font-weight: normal;
+
+    }
     h1{
         font-size: 1.5rem;
         padding: 3rem;
     }
     h2{
         font-size: 1.15rem;
+        font-weight: 600;
     }
     p, ul li{
-        font-weight: 400;
         padding-left: 1rem;
         font-size: 0.95rem;
+
+
     }
     section{
         padding: 1rem 0.5rem 1rem 0.5rem;
         margin: 5% 5% 10% 5%;
+
     }
+    footer p{
+        font-size: 0.85rem;
+        font-weight: normal;
+    }
+    
 }

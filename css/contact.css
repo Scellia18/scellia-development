@@ -101,9 +101,11 @@ input:hover, textarea:hover{
 /*ADAPTATION MOBILE*/
 
 @media (max-width: 767px){
+    
     h1{
         font-size: 1.5rem;
-        padding: 3rem;
+        padding: 2rem;
+        font-weight: normal;
     }
     h2{
         font-size: 1.15rem;
@@ -121,17 +123,21 @@ input:hover, textarea:hover{
     }
     form{
         
-        padding: 5% 2% 15% 2%;
+        padding: 8% 2% 15% 2%;
     }
     fieldset{
         padding: 1rem;
     }
     legend{
         font-size: 1.25rem;
+        font-weight: normal;
     }
     label, input, textarea{
         width: 18rem;
         font-size: 0.95rem;
+    }
+    form label{
+        font-weight: normal;
     }
     input{
         height: 1.6rem;
