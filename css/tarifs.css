@@ -33,7 +33,7 @@ article{
 
 .badge {
   position: absolute;
-  top: 16px;
+  top: 25px;
   right: -40px;
   background: #e63946;
   color: white;
@@ -84,7 +84,7 @@ ul{
 }
 .conditions{
     font-size: 0.8rem;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 .bouton1, .bouton3, .bouton2{
     padding: 1rem 0.5rem 1rem 0.5rem;
@@ -94,6 +94,7 @@ ul{
 .bouton1 a, .bouton3 a, .bouton2 a{
     font-weight: bold;
     color: white;
+    text-underline-offset: 4px;
 }
 .bouton1, .bouton3{
     margin: 4.5rem 2.85rem 0rem 2.85rem;

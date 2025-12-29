@@ -118,6 +118,7 @@ u{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: normal;
     }
+    
     h1, main h2, .H2processus h2,  p, h3{
         font-weight: normal;
     }
@@ -127,13 +128,17 @@ u{
     }
     main h2{
         font-size: 1.15rem;
-        margin: 2rem 1.5rem 0rem 1.5rem;
+        margin: 2rem 1.5rem 1rem 1.5rem;
     }
     section{
         padding: 1.5rem;
-        margin: 5% 5% 10% 5%;
+        padding-top: 0;
+        margin: 10% 5% 10% 5%;
         line-height: 1.5rem;
     
+    }
+    article{
+        padding-top: 1rem;
     }
     /* EXPLICATION PROCESSUS CREATION*/
 
