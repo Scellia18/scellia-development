@@ -10,15 +10,25 @@ h1{
 /*___________________________________MAIN / ARTICLE_____________________________*/
 
 
-main{
+main h2{
+    text-align: center;
+    color: #c9a24D;
+    font-size: 1.8rem;
+    margin: 2rem 0 1.5rem 0;
+    font-weight: lighter;
+
+}
+
+section{
     display: flex;
     justify-content: center;
     color: rgb(5, 50, 70);
+    margin-bottom: 8rem;
 }
 
 article{
     /* padding: 1rem; */
-    margin: 5rem;
+    margin: 1rem;
     width: 20rem;
     text-align: center;
     line-height: 1.5rem;
@@ -43,11 +53,17 @@ article{
   transform: rotate(45deg);
 }
 
-.h2{
+.h3{
     font-weight: bold;
     margin-top: 2rem;
 }
-.H2populaire{
+.h3surmesure{
+    font-weight: bold;
+    margin: 2.5rem;
+    font-size: 1.5rem;
+
+}
+.H3populaire{
     font-weight: bold;
     /* margin-right: 2rem; */
     /* margin-top: 2rem; */
@@ -57,6 +73,10 @@ article{
     margin-bottom: 1rem;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
+}
+.Rouge{
+    color: #e63946;
+    font-size: 1.8rem;
 }
 .hr{
     margin: 1rem;;
@@ -69,9 +89,9 @@ article{
     font-weight: bold;
     font-size: 1.5rem
 }
-.PrixDevisPersonnalisé{
+/* .PrixDevisPersonnalisé{
     margin-top: 2.85rem;
-}
+} */
 ul li{
     list-style: none;
     text-align: left;
@@ -86,30 +106,81 @@ ul{
     font-size: 0.8rem;
     margin: 0.5rem;
 }
-.bouton1, .bouton3, .bouton2{
+.bouton1, .bouton3, .bouton2, .bouton3surmesure{
     padding: 1rem 0.5rem 1rem 0.5rem;
     border-radius: 0.5rem;
     
 }
-.bouton1 a, .bouton3 a, .bouton2 a{
+.bouton1 a, .bouton3 a, .bouton2 a, .bouton3surmesure a{
     font-weight: bold;
     color: white;
     text-underline-offset: 4px;
 }
-.bouton1, .bouton3{
-    margin: 4.5rem 2.85rem 0rem 2.85rem;
+.bouton1{
+    margin: 6rem 2.85rem 0rem 2.85rem;
 }
 .bouton2{
-    margin: 0rem 2.85rem 2.85rem 2.85rem;
+    margin: 3.5rem 2.85rem 2.85rem 2.85rem;
 }
 .bouton1, .bouton2{
     background-color: rgb(8, 36, 80);
 }
-.bouton3{
+.bouton3, .bouton3surmesure{
     background-color: rgb(5, 50, 70);
+    margin: 2rem 2.85rem 2.85rem 2.85rem;
+}
+.bouton3surmesure{
+    margin-top: 6rem;
 }
 
 /*__________________________________________________________*/
+
+/*______________________________________________OFFRES_COMPLEMENTAIRES____________________________*/
+.offresComplementaires{
+    display: block;
+    margin-top: 2rem;
+}
+.offresComplementaires h2{
+    text-align: center;
+    color: #D4AF37;
+}
+article img{
+    /* padding-top: 1rem;
+    padding-bottom: 1rem; */
+    padding: 0.5rem;
+}
+.offresComplementaires article{
+    width: 20rem;
+    background-color: rgba(255, 255, 255, 0.90);
+    border-radius: 0.5rem;
+}
+.articleComplementaire{
+    display: flex;
+    justify-content: center;
+}
+.articleComplementaire h2{
+    color: rgb(5, 50, 70);
+    margin-top: 0;
+}
+.info{
+    text-align: center;
+    margin-top: 5rem;
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 1.25rem;
+    font-weight: normal;
+    line-height: 2rem;
+}
+.info a{
+    color: #D4AF37;
+    text-underline-offset: 4px;
+    text-shadow: rgba(255, 255, 255, 0.90) 0px 0px 0.5px;
+}
+.info strong{
+    font-weight: 500;
+}
+.goldenLine{
+    margin-bottom: 5rem;
+}
 
 /*ADAPTATION MOBILE767px*/
 
@@ -124,10 +195,11 @@ ul{
         font-size: 1.15rem;
     
     }
-    main{
+    section{
         flex-direction: column;
         align-items: center;
-        margin-top: 2rem;
+        margin-top: 0rem;
+        margin-bottom: 4rem;
     }
     /* .bouton1, .bouton2, .bouton3{
     margin-bottom: 1rem;
@@ -149,8 +221,23 @@ ul{
         margin-left: 0.9rem;
         font-size: 0.70rem;
     }
-    .bouton1 a, .bouton3 a, .bouton2 a{
+    .bouton1 a, .bouton3 a, .bouton2 a, .bouton3surmesure a{
         font-size: 0.85rem;
+    }
+    .bouton3surmesure{
+    margin-top: 4rem;
+    }
+    .info{
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+    margin-top: auto;
+    }
+    .goldenLine{
+    margin-bottom: 2rem;
+    }
+    .articleComplementaire{
+    flex-direction: column;
+    align-items: center;
     }
 
 }

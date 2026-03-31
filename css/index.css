@@ -26,12 +26,22 @@ h1{
 }
 main{
     padding: 4% 15% 4% 15%;
+    background-image: url('../assets/Frame6.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 105%;
+}
+
+main p{
+    font-size: 1.4rem;
+    margin: 3% 0 5% 0;
+    /* color: #c9a24D; */
+            /* color: #aaa69e; */
+        color: rgba(255, 255, 255, 0.650);
+
 
 }
-main p{
-    font-size: 1.5rem;
-    margin: 3% 0 5% 0;
-}
+
 main h2{
     font-size: 1.8rem;
 }
@@ -42,10 +52,10 @@ main h2{
     border-radius: 0.5rem;
     border: 1px solid rgba(255, 255, 255, 0.90);
 }
+
 main a{
     text-decoration: none;
     color: #c9a24D;
-
 }
 .boutonIntro:hover{
     box-shadow:  0 0 5px #DAA520;
@@ -146,14 +156,7 @@ article:hover{
 }
 
 
-.numero {
-    font-size: 1.5rem;
-    font-weight: normal;
-    margin-bottom: 2rem;
-    display: block;
-    text-shadow: rgba(255, 255, 255, 0.90) 0px 0px 0.5px;
 
-}
 
 h4{
     font-size: 1.5rem;
@@ -164,19 +167,35 @@ h4{
 
 }
 article p{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: rgba(255, 255, 255, 0.90);
     font-size: 1.1rem;
 }
 
 .MesServices a{
-    color: #c9a24D;
-    text-decoration: underline 1px;
-    text-underline-offset: 4px;
+    /* color: #c9a24D; */
+    color: #D4AF37;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(23, 23, 23);
+    border: 1px solid #c9a24D;
+    /* text-decoration: underline 1px;
+    text-underline-offset: 4px; */
+    text-decoration: none;
     text-shadow: rgba(255, 255, 255, 0.90) 0px 0px 0.5px;
 
 }
-
+.info{
+    text-align: center;
+    margin-top: 3rem;
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 1.25rem;
+}
+.info a{
+    color: #D4AF37;
+    text-underline-offset: 4px;
+    text-shadow: rgba(255, 255, 255, 0.90) 0px 0px 0.5px;
+}
 
 /*__________________________________________________________________________________________________________*/
 
@@ -197,9 +216,16 @@ article p{
     }
     main{
         padding: 4% 10%;
+        background-image: none;
     }
+    
     main p{
         font-size:1rem;
+        font-weight: normal;
+    }
+    
+    main strong{
+        font-weight: 500;
     }
     main h2{
         font-size: 1.25rem;
@@ -207,6 +233,10 @@ article p{
     .boutonIntro{
         font-size: 0.80rem;
         padding: 0.5rem;
+    }
+    .espace{
+       margin-top: 1.5rem;
+       margin-bottom: 1rem;
     }
     section{
         letter-spacing: 0.03em;
@@ -228,10 +258,10 @@ article p{
         margin: 2.5rem;
         width: 70%;
     }
-    .numero{
+    /* .numero{
         font-size: 1.25rem;
         margin-bottom: 1rem;
-    }
+    } */
     h4{
         font-size: 1.25rem;
     }
@@ -240,5 +270,8 @@ article p{
     }
     .MesServices a{
         font-size: 0.9rem;
+    }
+    .info{
+        font-size: 1rem;
     }
 }
