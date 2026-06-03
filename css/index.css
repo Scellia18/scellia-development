@@ -13,6 +13,12 @@ h1{
 .StatutMetierH1{
     font-size: 2rem;
 }
+.espace{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
 
 /*____________________________________________FIN HEADER INDEX___________________________________*/
 
@@ -43,7 +49,8 @@ main h2{
     font-size: 1.8rem;
 }
 .boutonIntro{
-    padding: 1%;
+    padding: 0.2rem;
+    width: 200px;
     font-size: 1rem;
     font-weight: normal;
     border-radius: 0.5rem;
@@ -208,7 +215,7 @@ article p{
     .StatutMetierH1{
         font-size: 1.4rem;
     }
-    
+  
     .Intro{
         line-height: 1.6rem;
     }
@@ -272,4 +279,14 @@ article p{
     .info{
         font-size: 1rem;
     }
+}
+@media (max-width: 687px){ /*avant 460px*/
+
+    .espace{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
 }
